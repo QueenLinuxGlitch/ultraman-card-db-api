@@ -1,0 +1,1483 @@
+{
+    "data": [
+      {
+        "id": 561,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "069",
+        "branch": "(PR-074)",
+        "number": "(PR-074)BP03-069",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "7",
+        "type": {
+          "value": "armed",
+          "description": "ARMED"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 12000,
+        "battle_power_3": 17000,
+        "battle_power_ex": null,
+        "publication_year": 2016,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4876,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "The Infinite PhantomJugglus Juggler",
+          "ruby": "-",
+          "character_name": "JUGGLUS JUGGLER",
+          "effect": "[DBL][TRP] 《When this character enters play》 You may choose one card at random from an opponent's hand, to reveal it. If the revealed card is a character card, give the battle opponent of one of your 『JUGGLUS JUGGLER』 a BP grade decrease by 1 for this turn. (*The revealed card returns to its previous state.)",
+          "flavor_text": "This is the story about the pain of not being chosen, of a man wreathed in darkness, reaching out for the light.",
+          "participating_works": null,
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "ikuyoan",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/5ad5c952bf51f3d60d96ba71c29254595fc61548.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/b4deb08c469cb1ec098f84d9bdcabfcaa08f2e00.png"
+        }
+      },
+      {
+        "id": 560,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "101",
+        "branch": "(PR-073)",
+        "number": "(PR-073)BP03-101",
+        "rarity": {
+          "value": "800_u",
+          "description": "U"
+        },
+        "round": "3",
+        "level": null,
+        "type": null,
+        "feature": {
+          "value": "scene",
+          "description": "Scene"
+        },
+        "battle_power_1": null,
+        "battle_power_2": null,
+        "battle_power_3": null,
+        "battle_power_ex": null,
+        "publication_year": null,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4875,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Labyrinth",
+          "ruby": "-",
+          "character_name": "-",
+          "effect": "[Activate] (Once per turn) If you have 『NEXUS』 , send the top card of your deck to your discard area → If the sent card is a scene card, give up to two of your Ultra Heroes +2000 BP for this turn. Otherwise, give one opponent's character -2000 BP for this turn. (*BP will not be less than 0.)",
+          "flavor_text": null,
+          "participating_works": null,
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/c7a92b5168114412ed8a659f14047ed7c0c7dd8b.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/f60dce06f203212e9631fe50d7b290394ac5c4e8.png"
+        }
+      },
+      {
+        "id": 559,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "008",
+        "branch": "(PR-070)",
+        "number": "(PR-070)BP03-008",
+        "rarity": {
+          "value": "800_u",
+          "description": "U"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "speed",
+          "description": "SPEED"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 12000,
+        "battle_power_3": 16000,
+        "battle_power_ex": null,
+        "publication_year": 2013,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4874,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Ginga",
+          "ruby": "-",
+          "character_name": "GINGA",
+          "effect": "[SIN][DBL] 《When this character enters play》 If you have two or more DOUBLE Ultra Heroes, you may give this character +2000 BP for this turn.",
+          "flavor_text": "Wipe your tears, and fight, oh champion of the galaxy!",
+          "participating_works": null,
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/8306b1692e4d13fe7cf7897d3c7738dfa01c0af0.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/181e14f2bc1453f1aa433e0de31af1120304c1db.png"
+        }
+      },
+      {
+        "id": 558,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "049",
+        "branch": "(PR-087)",
+        "number": "(PR-087)BP03-049",
+        "rarity": {
+          "value": "600_r",
+          "description": "R"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "power",
+          "description": "POWER"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 6000,
+        "battle_power_2": 12000,
+        "battle_power_3": 16000,
+        "battle_power_ex": null,
+        "publication_year": 2022,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4846,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Decker",
+          "ruby": "-",
+          "character_name": "DECKER",
+          "effect": "[SIN] 《When this character enters play》 If you have a TRIPLE Ultra Hero, you may give this character +3000 BP for this turn.",
+          "flavor_text": "The GUTS Hawk's incredible speed turned Decker's already powerful blow into an unstoppable force!",
+          "participating_works": "Ultraman Decker",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": "Strong Type",
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/6db17ce0efa4037a2f93a0f4aef45d262292ad4a.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/d2a7ff4595118d8b3193b1a03c8532b265aaa64b.png"
+        }
+      },
+      {
+        "id": 557,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "025",
+        "branch": "(PR-072)",
+        "number": "(PR-072)BP03-025",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 5000,
+        "battle_power_2": 11000,
+        "battle_power_3": 16000,
+        "battle_power_ex": null,
+        "publication_year": 2016,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4825,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Orb",
+          "ruby": "-",
+          "character_name": "ORB",
+          "effect": "[TRP] 《When this character enters play》 You may draw two cards, to give one of your 『ORB』 +1000 BP for this turn.",
+          "flavor_text": "This is the story of a chosen hero, and the endless chronicle of his efforts to light the darkness.",
+          "participating_works": "Ultraman Orb",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": "Spacium Zeperion",
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/3fc21b8b08c6ad7470eea2d4067e786dbee7da1b.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/647814e27ac0507736ef3f12befed79a8e7a42cf.png"
+        }
+      },
+      {
+        "id": 556,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "109",
+        "branch": "(PR-071)",
+        "number": "(PR-071)BP03-109",
+        "rarity": {
+          "value": "800_u",
+          "description": "U"
+        },
+        "round": "3",
+        "level": null,
+        "type": null,
+        "feature": {
+          "value": "scene",
+          "description": "Scene"
+        },
+        "battle_power_1": null,
+        "battle_power_2": null,
+        "battle_power_3": null,
+        "battle_power_ex": null,
+        "publication_year": null,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4824,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Juggler Dies!",
+          "ruby": "-",
+          "character_name": "-",
+          "effect": "[Activate] (Once per turn) If you have 『JUGGLUS JUGGLER』 , choose one card at random from an opponent's hand, to reveal it → If the revealed card is a character card, give two of your characters +1000 BP for this turn. (*The revealed card returns to its previous state.)",
+          "flavor_text": null,
+          "participating_works": "Ultraman Orb",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/73b255e1a59d07a4bb021fd037bf9b0b77ad0f92.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/e3875c71ca3594a26da1f9cd55c5a755a348f81e.png"
+        }
+      },
+      {
+        "id": 555,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "043",
+        "branch": "(PR-069)",
+        "number": "(PR-069)BP03-043",
+        "rarity": {
+          "value": "800_u",
+          "description": "U"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "power",
+          "description": "POWER"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 6000,
+        "battle_power_2": 13000,
+        "battle_power_3": 16000,
+        "battle_power_ex": null,
+        "publication_year": 2017,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4823,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Geed",
+          "ruby": "-",
+          "character_name": "GEED",
+          "effect": "[DBL][TRP][Activate] (Once per turn) Send the top card of your deck to your discard area → If the sent card has TYPE 【POWER】 or 【ARMED】 , give one of your Ultra Heroes TYPE 【POWER】 for this turn.",
+          "flavor_text": "Even a clone has the right to choose their own path.",
+          "participating_works": "Ultraman Geed",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": "Magnificent",
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/d1c97dfe9e4c49b48201b545594bc2d363186dd8.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/34f4938cc137e56e98788f0b1c4775c41ee27446.png"
+        }
+      },
+      {
+        "id": 553,
+        "section": "PR",
+        "bundle_version": null,
+        "serial": "046",
+        "branch": null,
+        "number": "PR-046",
+        "rarity": {
+          "value": "400_rrr",
+          "description": "RRR"
+        },
+        "round": null,
+        "level": "6",
+        "type": {
+          "value": "invasion",
+          "description": "INVASION"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 10000,
+        "battle_power_2": 15000,
+        "battle_power_3": null,
+        "battle_power_ex": null,
+        "publication_year": 1967,
+        "display_card_bundle_names": [
+          "PR Card"
+        ],
+        "detail": {
+          "id": 4808,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "The Hallucination AlienAlien Metron",
+          "ruby": "-",
+          "character_name": "ALIEN METRON",
+          "effect": "[SIN][DBL] 《When this character enters play》 You may reveal the top card of an opponent's deck. If the revealed card is an Ultra Hero card, give one of your characters +1000 BP for this turn. Return the revealed card to the top or bottom of their deck.",
+          "flavor_text": "He invited the man to sit, a genteel contrast to the chaotic madness his plans had wrought. After all, he didn't need violence to conquer the Earth.",
+          "participating_works": "Ultraseven",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "NAKANORYO",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/1cbbafabfcf49037e89b72abc72c48218e730549.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/35233d3d17924d3bae33c1289cbb80274c09d01a.png"
+        }
+      },
+      {
+        "id": 544,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "059",
+        "branch": "UR02",
+        "number": "UR(02/02)BP03-059",
+        "rarity": {
+          "value": "100_ur",
+          "description": "UR"
+        },
+        "round": null,
+        "level": "7",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 11000,
+        "battle_power_3": 18000,
+        "battle_power_ex": null,
+        "publication_year": 2009,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3785,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Belial",
+          "ruby": "-",
+          "character_name": "BELIAL",
+          "effect": "[DBL][TRP][Activate] (Once per turn) Discard one card from your hand that is not an Ultra Hero card → Give one of your 『BELIAL』 , or one of your Kaiju with printed EXTRA BP, a BP grade increase by 1 for this turn.",
+          "flavor_text": "When the brightest star collapses, all that is left is darkness and hunger.",
+          "participating_works": "Ultraman Geed",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "Masayuki Gotoh",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/71c16775ccd1d3acafa3e4e284086f26385cf89a.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/2a130176aa4b0eca3bbdc6a969f4ed651c267c17.png"
+        }
+      },
+      {
+        "id": 543,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "007",
+        "branch": "UR01",
+        "number": "UR(01/02)BP03-007",
+        "rarity": {
+          "value": "100_ur",
+          "description": "UR"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 5000,
+        "battle_power_2": 11000,
+        "battle_power_3": 17000,
+        "battle_power_ex": null,
+        "publication_year": 2013,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3784,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Ginga",
+          "ruby": "-",
+          "character_name": "GINGA",
+          "effect": "[SIN][DBL] While you have two or more DOUBLE Ultra Heroes, this character's BP grade increases by 1. Additionally, while you have four or more DOUBLE Ultra Heroes, give this character +1000 BP.",
+          "flavor_text": "He came from an unknown future to usher in a new generation of heroism.",
+          "participating_works": "Ultraman Ginga",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "Masayuki Gotoh",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/b0c536de3528c79a9070de5aea11440a09508f22.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/532ff1f46885f8d9aa76d7a94c9753b415a0feda.png"
+        }
+      },
+      {
+        "id": 542,
+        "section": "BP",
+        "bundle_version": "01",
+        "serial": "105",
+        "branch": "ExP",
+        "number": "ExPBP01-105",
+        "rarity": {
+          "value": "370_exp",
+          "description": "ExP"
+        },
+        "round": "2",
+        "level": null,
+        "type": null,
+        "feature": {
+          "value": "scene",
+          "description": "Scene"
+        },
+        "battle_power_1": null,
+        "battle_power_2": null,
+        "battle_power_3": null,
+        "battle_power_ex": null,
+        "publication_year": null,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3783,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "The Man who Created SKaRD",
+          "ruby": "-",
+          "character_name": "-",
+          "effect": "[Activate] (Once per turn) If you have 『BLAZAR』 , reveal the top five cards of your deck → Put one Ultra Hero card from among them into play on top of one of your Ultra Hero that is able to level up with it, and send the rest to your discard area. At the end of turn, send cards put into play with this effect to your discard area.",
+          "flavor_text": null,
+          "participating_works": null,
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": null,
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/d70a14985a92b0472dea7bdfb8380481b2c52603.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/febb2d37f1214dcd244d3ec0a11a9f572e09b5db.png"
+        }
+      },
+      {
+        "id": 541,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "059",
+        "branch": "SSSP02",
+        "number": "SSSP(02/02)BP03-059",
+        "rarity": {
+          "value": "200_sssp",
+          "description": "SSSP"
+        },
+        "round": null,
+        "level": "7",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 11000,
+        "battle_power_3": 18000,
+        "battle_power_ex": null,
+        "publication_year": 2009,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3782,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Belial",
+          "ruby": "-",
+          "character_name": "BELIAL",
+          "effect": "[DBL][TRP][Activate] (Once per turn) Discard one card from your hand that is not an Ultra Hero card → Give one of your 『BELIAL』 , or one of your Kaiju with printed EXTRA BP, a BP grade increase by 1 for this turn.",
+          "flavor_text": "He sought the power he thought he deserved, but the Plasma Spark rejected the darkness within his heart.",
+          "participating_works": "Ultraman Geed",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "Masayuki Gotoh",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/61dcddbf1f5665cc42973a811a5c7e4cbe469b6f.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/ec0472cdce09fa11116516d74a846471002fa735.png"
+        }
+      },
+      {
+        "id": 540,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "007",
+        "branch": "SSSP01",
+        "number": "SSSP(01/02)BP03-007",
+        "rarity": {
+          "value": "200_sssp",
+          "description": "SSSP"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 5000,
+        "battle_power_2": 11000,
+        "battle_power_3": 17000,
+        "battle_power_ex": null,
+        "publication_year": 2013,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3781,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Ginga",
+          "ruby": "-",
+          "character_name": "GINGA",
+          "effect": "[SIN][DBL] While you have two or more DOUBLE Ultra Heroes, this character's BP grade increases by 1. Additionally, while you have four or more DOUBLE Ultra Heroes, give this character +1000 BP.",
+          "flavor_text": "Even as the Dark Spark War stole time from countless heroes and monsters, he appeared to shine a light of hope.",
+          "participating_works": "Ultraman Ginga",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "Masayuki Gotoh",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/6d6c29f04b8c09e55e60516e5892618427564421.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/d91d5e3be413f698c6ee3b35fe98820a1a1a01f8.png"
+        }
+      },
+      {
+        "id": 539,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "069",
+        "branch": "SP05",
+        "number": "SP(05/05)BP03-069",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "7",
+        "type": {
+          "value": "armed",
+          "description": "ARMED"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 12000,
+        "battle_power_3": 17000,
+        "battle_power_ex": null,
+        "publication_year": 2016,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3780,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "The Infinite Phantom Jugglus Juggler",
+          "ruby": "-",
+          "character_name": "JUGGLUS JUGGLER",
+          "effect": "[DBL][TRP] 《When this character enters play》 You may choose one card at random from an opponent's hand, to reveal it. If the revealed card is a character card, give the battle opponent of one of your 『JUGGLUS JUGGLER』 a BP grade decrease by 1 for this turn. (*The revealed card returns to its previous state.)",
+          "flavor_text": "Behind every wicked plan, every vicious insult, was a man who just wanted to be recognized.",
+          "participating_works": "Ultraman Orb",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "ikuyoan",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/d5c0e12694065e7f183d1c9a6bdd6191fa796afa.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/4d8c1d1849b939eed06a123db0dc87a536702096.png"
+        }
+      },
+      {
+        "id": 538,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "059",
+        "branch": "SP04",
+        "number": "SP(04/05)BP03-059",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "7",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 11000,
+        "battle_power_3": 18000,
+        "battle_power_ex": null,
+        "publication_year": 2009,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3779,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Belial",
+          "ruby": "-",
+          "character_name": "BELIAL",
+          "effect": "[DBL][TRP][Activate] (Once per turn) Discard one card from your hand that is not an Ultra Hero card → Give one of your 『BELIAL』 , or one of your Kaiju with printed EXTRA BP, a BP grade increase by 1 for this turn.",
+          "flavor_text": "To carve out the heart of the Land of Light. Even that would not satisfy him.",
+          "participating_works": "Ultraman Geed",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "ikuyoan",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/f4a211a3fe89c127b1a13dd14fcb0a67ab063554.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/e27a7a3b5f07fbaa52aca8317dc860f2366a22c5.png"
+        }
+      },
+      {
+        "id": 537,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "025",
+        "branch": "SP03",
+        "number": "SP(03/05)BP03-025",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 5000,
+        "battle_power_2": 11000,
+        "battle_power_3": 16000,
+        "battle_power_ex": null,
+        "publication_year": 2016,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3778,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Orb",
+          "ruby": "-",
+          "character_name": "ORB",
+          "effect": "[TRP] 《When this character enters play》 You may draw two cards, to give one of your 『ORB』 +1000 BP for this turn.",
+          "flavor_text": "To illuminate the darkness, and defeat evil. That is why he fights.",
+          "participating_works": "Ultraman Orb",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": "Spacium Zeperion",
+          "illustrator_name": "ikuyoan",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/b04a89fcf957f1ce489af9a3d85d4b49900212d0.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/709850eb1dcaaeef24f0278bff10e450ea29b904.png"
+        }
+      },
+      {
+        "id": 536,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "016",
+        "branch": "SP02",
+        "number": "SP(02/05)BP03-016",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 7000,
+        "battle_power_2": 12000,
+        "battle_power_3": 17000,
+        "battle_power_ex": null,
+        "publication_year": 2004,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3777,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Nexus",
+          "ruby": "-",
+          "character_name": "NEXUS",
+          "effect": "[DBL][TRP] 《When this character enters play》 You may send one opponent's scene to its owner's discard area, or return one scene card from your discard area to the top or bottom of your deck, to give one of your Ultra Heroes +2000 BP for this turn.",
+          "flavor_text": "Every Deunamist has their own reason for fighting, but all connect through their bond with Nexus.",
+          "participating_works": "Ultraman Nexus",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": "Junis",
+          "illustrator_name": "ikuyoan",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/ea6023df2eab29a392a6ef4f57357b52bdc387e5.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/4bf17d3e4a6da892f0eddcbee8279bf671da4940.png"
+        }
+      },
+      {
+        "id": 535,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "007",
+        "branch": "SP01",
+        "number": "SP(01/05)BP03-007",
+        "rarity": {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        "round": null,
+        "level": "3",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        "battle_power_1": 5000,
+        "battle_power_2": 11000,
+        "battle_power_3": 17000,
+        "battle_power_ex": null,
+        "publication_year": 2013,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3776,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Ultraman Ginga",
+          "ruby": "-",
+          "character_name": "GINGA",
+          "effect": "[SIN][DBL] While you have two or more DOUBLE Ultra Heroes, this character's BP grade increases by 1. Additionally, while you have four or more DOUBLE Ultra Heroes, give this character +1000 BP.",
+          "flavor_text": "Ginga fights so that others may dream without limits!",
+          "participating_works": "Ultraman Ginga",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "ikuyoan",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/7a297d0c8f58dbd7fa9c69d8ba5cbdecdd73a0ba.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/08ad375f0b962ee89cb38b5434db462165a3a7dc.png"
+        }
+      },
+      {
+        "id": 534,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "091",
+        "branch": "AP20",
+        "number": "AP(20/20)BP03-091",
+        "rarity": {
+          "value": "350_ap",
+          "description": "AP"
+        },
+        "round": null,
+        "level": "5",
+        "type": {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 1000,
+        "battle_power_2": 7000,
+        "battle_power_3": null,
+        "battle_power_ex": null,
+        "publication_year": 2025,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3775,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Guil Arc",
+          "ruby": "-",
+          "character_name": "GUIL ARC",
+          "effect": "[SIN] 《When this character enters play》 You may draw two cards. When you draw with this effect, return one card from your hand to the bottom of your deck.",
+          "flavor_text": "Trauma was allowed to fester in his heart until even his ideals of heroism were corrupted.",
+          "participating_works": "Ultraman Arc the Movie: The Clash of Light and Evil",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "tatsuya",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/8d14f1620b7fdb42f103542cecb656f6dec119eb.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/ce8029279cf68009cc12c6beed44e711205b89f8.png"
+        }
+      },
+      {
+        "id": 533,
+        "section": "BP",
+        "bundle_version": "03",
+        "serial": "087",
+        "branch": "AP19",
+        "number": "AP(19/20)BP03-087",
+        "rarity": {
+          "value": "350_ap",
+          "description": "AP"
+        },
+        "round": null,
+        "level": "6",
+        "type": {
+          "value": "devastation",
+          "description": "DEVASTATION"
+        },
+        "feature": {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        "battle_power_1": 8000,
+        "battle_power_2": 15000,
+        "battle_power_3": null,
+        "battle_power_ex": null,
+        "publication_year": 2013,
+        "display_card_bundle_names": [
+          "[BP03] Shadow of Undying Vengeance"
+        ],
+        "detail": {
+          "id": 3774,
+          "product_language": {
+            "value": "en",
+            "description": "English"
+          },
+          "name": "Dark Lugiel",
+          "ruby": "-",
+          "character_name": "DARK LUGIEL",
+          "effect": "[SIN][DBL] 《When this character enters play》 You may choose this character's battle opponent. If you do, the chosen character cannot level up during the next turn.",
+          "flavor_text": "\"What is peace?\" To find the answer, the future diverged into light and darkness.",
+          "participating_works": "Ultraman Nexus",
+          "participating_works_url": null,
+          "errata_enable": false,
+          "errata_url": null,
+          "type_name": null,
+          "illustrator_name": "TONJI MATSUNO",
+          "image_url": "https://img.ultraman-cardgame.com/images/card_details/28ea8ed96b3dc6af8e56113015a1456f2bddab4a.png",
+          "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_details/thumbnails/60ff185d265c2ba0bbc4de0358955ba39622e86f.png"
+        }
+      }
+    ],
+    "links": {
+      "first": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=1",
+      "last": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=27",
+      "prev": null,
+      "next": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=2"
+    },
+    "meta": {
+      "current_page": 1,
+      "from": 1,
+      "last_page": 27,
+      "links": [
+        {
+          "url": null,
+          "label": "&laquo; Previous",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=1",
+          "label": "1",
+          "active": true
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=2",
+          "label": "2",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=3",
+          "label": "3",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=4",
+          "label": "4",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=5",
+          "label": "5",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=6",
+          "label": "6",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=7",
+          "label": "7",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=8",
+          "label": "8",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=9",
+          "label": "9",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=10",
+          "label": "10",
+          "active": false
+        },
+        {
+          "url": null,
+          "label": "...",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=26",
+          "label": "26",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=27",
+          "label": "27",
+          "active": false
+        },
+        {
+          "url": "http://api.ultraman-cardgame.com/api/v1/us/cards?page=2",
+          "label": "Next &raquo;",
+          "active": false
+        }
+      ],
+      "path": "http://api.ultraman-cardgame.com/api/v1/us/cards",
+      "per_page": 20,
+      "to": 20,
+      "total": 528,
+      "types": [
+        {
+          "value": "basic",
+          "description": "BASIC"
+        },
+        {
+          "value": "power",
+          "description": "POWER"
+        },
+        {
+          "value": "armed",
+          "description": "ARMED"
+        },
+        {
+          "value": "speed",
+          "description": "SPEED"
+        },
+        {
+          "value": "disaster",
+          "description": "HAZARD"
+        },
+        {
+          "value": "devastation",
+          "description": "DEVASTATION"
+        },
+        {
+          "value": "invasion",
+          "description": "INVASION"
+        }
+      ],
+      "features": [
+        {
+          "value": "ultra_hero",
+          "description": "Ultra Hero"
+        },
+        {
+          "value": "kaiju",
+          "description": "Kaiju"
+        },
+        {
+          "value": "scene",
+          "description": "Scene"
+        }
+      ],
+      "rarities": [
+        {
+          "value": "900_c",
+          "description": "C"
+        },
+        {
+          "value": "800_u",
+          "description": "U"
+        },
+        {
+          "value": "600_r",
+          "description": "R"
+        },
+        {
+          "value": "500_rr",
+          "description": "RR"
+        },
+        {
+          "value": "400_rrr",
+          "description": "RRR"
+        },
+        {
+          "value": "370_exp",
+          "description": "ExP"
+        },
+        {
+          "value": "350_ap",
+          "description": "AP"
+        },
+        {
+          "value": "300_sp",
+          "description": "SP"
+        },
+        {
+          "value": "200_sssp",
+          "description": "SSSP"
+        },
+        {
+          "value": "100_ur",
+          "description": "UR"
+        }
+      ],
+      "grades": [
+        {
+          "value": "single",
+          "description": "SINGLE"
+        },
+        {
+          "value": "double",
+          "description": "DOUBLE"
+        },
+        {
+          "value": "triple",
+          "description": "TRIPLE"
+        },
+        {
+          "value": "extra",
+          "description": "EXTRA"
+        }
+      ],
+      "rounds": [0, 1, 2, 3, 4],
+      "levels": [1, 2, 3, 4, 5, 6, 7],
+      "card_bundles": [
+        {
+          "id": 15,
+          "type": {
+            "value": "pack",
+            "description": "Pack"
+          },
+          "version": "4",
+          "detail": {
+            "id": 111,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "4.50USD",
+            "display_idx": 90,
+            "sort_idx": 0,
+            "caption_code": "[BP04]",
+            "name": "Gleam of Eternal Hope",
+            "caption_name": "Gleam of Eternal Hope[BP04]",
+            "summary_name": "Gleam of Eternal Hope",
+            "display_name": "[BP04] Gleam of Eternal Hope",
+            "description": "A new hero makes his debut - Ultraman Omega!\u003Cbr\u003E\r\nExisting Ultra Heroes have also received powerful new upgrades!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(3, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nUltraman Omega, the titular hero of the new series airing this summer, makes his appearance in UCG!\u003Cbr\u003E\r\nExisting Ultra Heroes such as Ultraman Dyna, Z and Trigger, will also gain new strength! \u003Cbr\u003E\r\nFind your Ultra Buddy from the growing selection of Heroes!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP04/BP04_008_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP04/BP04_003_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP04/BP04_032_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nExciting parallel rarities ExP, AP, and UR will also be available in this set! A total of two ExP types will appear in this booster pack!\r\n\u003C/p\u003E\r\n\r\n\u003Cp\u003E\r\nUltraman Arc returns in this booster, with brand new cards that synergize with Starter Deck 03!\r\nMore Kaiju will make their appearance as well, a looming threat that our Ultra Heroes must face head-on! \r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid2\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP04/BP04_090_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP04/BP04_096_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E",
+            "included_items": "・12 random cards\r\n・1 flyer with QR code\r\nNumber of Types　Total 112 cards+31 parallel cards",
+            "included_rarities": "・44C\r\n・32U\r\n・17R\r\n・13RR\r\n・5RRR\r\n※30 parallel cards",
+            "notes": "Important Notes:\r\nCards are randomly included.\r\nThe actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "August 1, 2025",
+            "released_at": "2025-08-01 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/ad698de0bff93a5ef45ad4ddad4fe53c95e5df1b.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/42dbd423e8041422ab9342b8db05f49dc8f61988.png"
+          }
+        },
+        {
+          "id": 14,
+          "type": {
+            "value": "deck",
+            "description": "Deck"
+          },
+          "version": "3",
+          "detail": {
+            "id": 120,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "11.99USD",
+            "display_idx": 80,
+            "sort_idx": 0,
+            "caption_code": "[SD03]",
+            "name": "Ω to the Future",
+            "caption_name": "Ω to the Future[SD03]",
+            "summary_name": "Ω to the Future",
+            "display_name": "[SD03] Ω to the Future",
+            "description": "Ultraman Arc and Ultraman Omega join forces!\u003Cbr\u003E\r\nUnite the power of these two heroes and start your journey in the Ultraman Card Game!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\nspan.link{\r\ncolor:#e62d30;\r\n}\r\n.image-grid1 {\r\n  grid-template-columns: repeat(4, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\n・With a Starter Deck product, you can get into the game right away! \u003Cbr\u003E\r\n・This product contains completely original cards not found in the Booster Pack! \u003Cbr\u003E\r\n　A must-have for building new decks with Booster Pack 04 “Gleam of Eternal Hope” featuring the brand new Ultra Hero.\u003Cbr\u003E\r\n・One pack of Booster Pack 04 will also be included! \r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD03/SD03_002_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD03/SD03_009_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD03/SD03_012_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nUtilize the Discard Area skillfully and combine powers of your Ultra Heroes and achieve victory!  \r\n\u003C/p\u003E",
+            "included_items": "・50 card pre-constructed deck(20 card types)\r\n・1 pack BP04\r\n・1 playsheet\r\n・1 Deck Guide",
+            "included_rarities": "・10C\r\n・7U\r\n・3RRR",
+            "notes": "In a booster pack, \"Gleam of Eternal Hope,\" cards are randomly included.\r\nThe actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "July 25, 2025",
+            "released_at": "2025-07-01 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/6df573f8f9b90a0b02500419d255a123c84277af.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/ef906f74384944bc89118f95e2946671bbf21655.png"
+          }
+        },
+        {
+          "id": 10,
+          "type": {
+            "value": "pack",
+            "description": "Pack"
+          },
+          "version": "3",
+          "detail": {
+            "id": 83,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "4.50USD",
+            "display_idx": 70,
+            "sort_idx": 0,
+            "caption_code": "[BP03]",
+            "name": "Shadow of Undying Vengeance",
+            "caption_name": "Shadow of Undying Vengeance [BP03]",
+            "summary_name": "Shadow of Undying Vengeance",
+            "display_name": "[BP03] Shadow of Undying Vengeance",
+            "description": "The highly anticipated arrival of the Dark Hero Ultraman Belial!\r\n\u003Cbr\u003E\r\nYou are now able to build a Kaiju deck!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(3, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nUltraman Belial and the Kaiju Deck have finally appeared!\r\n\u003Cbr\u003E\r\nYou can build a deck using just the cards in this pack! \r\n\u003Cbr\u003E\r\nA brand new adventure with UCG awaits!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/BP03/BP03_051_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP03/BP03_078_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP03/BP03_082_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nIn addition to the popular ExP and AP, Parallel cards of Kaijus will also be included starting from BP03.\r\n\u003Cbr\u003E\r\n\u003Cbr\u003E\r\nGeed and Zero, the archenemies of Belial, will also make their appearance with a whole new look!\r\n\u003Cbr\u003E\r\nThe Ultra Heroes who appeared in SD02, BP01 and 02 will also be strengthened!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid2\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/BP03/BP03_033_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP03/BP03_044_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E",
+            "included_items": "・12 random cards\r\n・1 flyer with QR code\r\nNumber of Types　Total 111 cards+30 parallel cards",
+            "included_rarities": "・44C\r\n・32U\r\n・17R\r\n・13RR\r\n・5RRR\r\n※30 parallel cards",
+            "notes": "Important Notes:\r\nCards are randomly included.\r\nThe actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "April 25, 2025",
+            "released_at": "2025-04-25 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/3f7247f03fe204ba166401b2b30ec56f28e3ea6e.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/3d18460d10dd26adb8f4af412b8e73e3daeb5626.png"
+          }
+        },
+        {
+          "id": 8,
+          "type": {
+            "value": "pack",
+            "description": "Pack"
+          },
+          "version": "2",
+          "detail": {
+            "id": 66,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "4.50USD",
+            "display_idx": 60,
+            "sort_idx": 0,
+            "caption_code": "[BP02]",
+            "name": "Vortex of Crimson and Azure",
+            "caption_name": "Vortex of Crimson and Azure[BP02]",
+            "summary_name": "Vortex of Crimson and Azure",
+            "display_name": "[BP02] Vortex of Crimson and Azure",
+            "description": "Finally, the Giant of the Azure Sea, Ultraman Agul makes his appearance\r\n\u003Cbr\u003E\r\nFeaturing Zero and Gaia in their newly Upgraded Form!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(3, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nMany cards that enhances BP01 decks such as Zero will be included\r\n\u003Cbr\u003E\r\nIn addition, Ultra Heroes from the SD such as Dyna are included, to further enhance the 2 SDs\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/BP02/BP02_059_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP02/BP02_007_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP02/BP02_009_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nContinuing from BP01, popular AP and UR parallel cards will also  be included!\r\n\u003Cbr\u003E\r\nFurthermore, a New Rarity ExP will make its debut\r\n\u003Cbr\u003E\r\nTYPE [Devastation] will be added to the lineup of Kaiju cards!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid2\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/BP02/BP02_091_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP02/BP02_093_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E",
+            "included_items": "・12 random cards\r\n・1 flyer with QR code\r\nNumber of Types　Total 110 cards+30 parallel cards",
+            "included_rarities": "・43C\r\n・32U\r\n・17R\r\n・13RR\r\n・5RRR\r\n※30 parallel cards",
+            "notes": "Important Notes:\r\nCards are randomly included.\r\nThe actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "January 24, 2025",
+            "released_at": "2025-01-24 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/ed6fccf9d4ae10ecca33045073e566b576882073.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/efa120be230fcd4c57051d0e8e8b7bfd125b0872.png"
+          }
+        },
+        {
+          "id": 9,
+          "type": {
+            "value": "deck",
+            "description": "Deck"
+          },
+          "version": "1",
+          "detail": {
+            "id": 67,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "11.99USD",
+            "display_idx": 50,
+            "sort_idx": 0,
+            "caption_code": "[EXD01]",
+            "name": "Ultraman: Rising",
+            "caption_name": "Ultraman: Rising[EXD01]",
+            "summary_name": "Ultraman: Rising",
+            "display_name": "[EXD01] Ultraman: Rising",
+            "description": "Featuring Ultraman, Emi and Ultradad from [Ultraman: Rising]",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(4, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nLineup is based off [Ultraman: Rising]\r\n\u003Cbr\u003E\r\nExtra Deck 01, featuring [Ultraman Rising]\r\n\u003Cbr\u003E\r\nThe largest BP in UCG history! Use Emi's effects to support Ultraman to ensure victory!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/EXD01/EXD01_002_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/EXD01/EXD01_006_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/EXD01/EXD01_011_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/EXD01/EXD01_016_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E",
+            "included_items": "・50 card pre-constructed deck(19 card types)\r\n・1 pack BP02\r\n・1 playsheet",
+            "included_rarities": "・8C\r\n・6U\r\n・3R\r\n・2RRR",
+            "notes": "In a booster pack, \"Vortex of Crimson and Azure,\" cards are randomly included.\r\nThe actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "January 24, 2025",
+            "released_at": "2025-01-24 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/24a838523073b27b868117facd0cc9102373eeb7.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/b59cf4443fe221f3be954ae31d1a19d167cb048b.png"
+          }
+        },
+        {
+          "id": 5,
+          "type": {
+            "value": "pack",
+            "description": "Pack"
+          },
+          "version": "1",
+          "detail": {
+            "id": 61,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "4.50USD",
+            "display_idx": 40,
+            "sort_idx": 0,
+            "caption_code": "[BP01]",
+            "name": "Guardians of the Earth",
+            "caption_name": "Guardians of the Earth[BP01]",
+            "summary_name": "Guardians of the Earth",
+            "display_name": "[BP01] Guardians of the Earth",
+            "description": "Featuring heroes from the Heisei series, the New Generation series, and the latest addition, Ultraman Arc!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(4, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 450px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nEnhance your two starter decks with numerous characters found within the Booster packs!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/BP01/BP01_016_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP01/BP01_002_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP01/BP01_058_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP01/BP01_038_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nFeaturing various card designs, including stills from the show, newly shot studio photos, and original illustrations!\r\n\u003Cbr\u003E\r\nIncludes Kaiju cards! Plus, an array of scene cards that capture the most memorable moments from the works!\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid2\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/BP01/BP01_091_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/BP01/BP01_105_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E",
+            "included_items": "・12 random cards\r\n・1 flyer with QR code\r\nNumber of Types　Total 110 cards+30 parallel cards",
+            "included_rarities": "・45C\r\n・31U\r\n・16R\r\n・13RR\r\n・5RRR\r\n※30 parallel cards",
+            "notes": "Important Notes:\r\nCards are randomly included.\r\nThe actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "November 8, 2024",
+            "released_at": "2024-11-08 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/718aef247c252d5bf7399cc902fb83d00d4ee940.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/7e421d9174b4c01fca8f639d160ee3240d714064.png"
+          }
+        },
+        {
+          "id": 6,
+          "type": {
+            "value": "deck",
+            "description": "Deck"
+          },
+          "version": "1",
+          "detail": {
+            "id": 62,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "9.00USD",
+            "display_idx": 20,
+            "sort_idx": 0,
+            "caption_code": "[SD01]",
+            "name": "Heroes of Hyper Space",
+            "caption_name": "Heroes of Hyper Space[SD01]",
+            "summary_name": "Heroes of Hyper Space",
+            "display_name": "[SD01] Heroes of Hyper Space",
+            "description": "Tiga, Dyna, and Gaia gather at the Ultraman Card Game across time and space !\r\n\u003Cbr\u003E\r\nYou are the one to unleash “The Battle in Hyper Space”!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(3, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nCard lineup based on the movie “Ultraman Tiga, Ultraman Dyna & Ultraman Gaia: The Battle in Hyper Space”!\r\n\u003Cbr\u003E\r\nStarter Deck 01  \"Heroes of Hyper Space\"\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/SD01/SD01_001_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD01/SD01_002_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD01/SD01_003_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nBuild a solid game with basic effects and gaining advantages! \r\n\u003C/p\u003E",
+            "included_items": "・50 card pre-constructed deck(14 card types)\r\n・1 playsheet",
+            "included_rarities": "・7C\r\n・4U\r\n・3RRR",
+            "notes": "The actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "October 25, 2024",
+            "released_at": "2024-09-25 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/e9dde8081af43e42fb718baeeaa6d765b2e1b918.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/0ed70985b53dded26fc6a2624b2c25e5d1650539.png"
+          }
+        },
+        {
+          "id": 7,
+          "type": {
+            "value": "deck",
+            "description": "Deck"
+          },
+          "version": "2",
+          "detail": {
+            "id": 63,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "9.00USD",
+            "display_idx": 30,
+            "sort_idx": 0,
+            "caption_code": "[SD02]",
+            "name": "The Bonds of Zero",
+            "caption_name": "The Bonds of Zero[SD02]",
+            "summary_name": "The Bonds of Zero",
+            "display_name": "[SD02] The Bonds of Zero",
+            "description": "Zero, Geed, and Z, bound by friendship and mentorship, stand together!\r\n\u003Cbr\u003E\r\nFight with the bonds of these three heroes!",
+            "feature": "\u003Cstyle type=\"text/css\"\u003E\r\n.image-grid1 {\r\n  grid-template-columns: repeat(3, auto);\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.image-grid2 {\r\n  grid-template-columns: auto auto;\r\n  justify-content: center;\r\n  column-gap: 15%;\r\n}\r\n\r\n.image-grid1, .image-grid2 {\r\n  margin: 40px 0;\r\n  display: grid;\r\n  img {\r\n    width: 204px;\r\n    height: auto;\r\n    display: inline-block;\r\n    margin: 0 10px;\r\n  }\r\n  @media screen and (max-width: 1023px) {\r\n    grid-template-columns: repeat(2, auto);\r\n    row-gap: 4vw;\r\n    column-gap: 10%;\r\n    margin: 8vw 0;\r\n    img {\r\n      margin: 0;\r\n    }\r\n  }\r\n}\r\n\u003C/style\u003E\r\n\r\n\u003Cp\u003E\r\nCard lineup based on Ultraman Z Episode 6 “The Man Returns!” and Episode 7 “His Majesty's Medal”!\r\n\u003Cbr\u003E\r\nStarter Deck 02 \"The Bonds of Zero\"\r\n\u003C/p\u003E\r\n\r\n\u003Cdiv class=\"image-grid1\"\u003E\r\n  \u003C!-- テストのため、画像をフロント側で画像保持をする形で仮実装した。 本来はサーバに保存している画像パスを指定する --\u003E\r\n  \u003Cimg src=\"/lp/img/SD02/SD02_001_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD02/SD02_002_ENG.png\" decoding=\"async\"\u003E\r\n  \u003Cimg src=\"/lp/img/SD02/SD02_003_ENG.png\" decoding=\"async\"\u003E\r\n\u003C/div\u003E\r\n\r\n\u003Cp\u003E\r\nGrab a victory by taking type advantage over your opponent!\r\n\u003C/p\u003E",
+            "included_items": "・50 card pre-constructed deck(14 card types)\r\n・1 playsheet",
+            "included_rarities": "・7C\r\n・4U\r\n・3RRR",
+            "notes": "The actual product may differ slightly from the images.\r\nProduct specifications may change.",
+            "display_released_at": "October 25, 2024",
+            "released_at": "2024-09-25 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/6393eee97e6006f06a654b698b2ff97e3d46cdf5.png",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/19226a7e8b188e3debd1828bea0d4a839eb0f1b7.png"
+          }
+        },
+        {
+          "id": 1,
+          "type": {
+            "value": "pr",
+            "description": "PR Card"
+          },
+          "version": "1",
+          "detail": {
+            "id": 2,
+            "product_language": {
+              "value": "en",
+              "description": "English"
+            },
+            "price": "",
+            "display_idx": 0,
+            "sort_idx": 0,
+            "caption_code": "",
+            "name": "PR",
+            "caption_name": "",
+            "summary_name": "",
+            "display_name": "PR Card",
+            "description": "",
+            "feature": "",
+            "included_items": "",
+            "included_rarities": "",
+            "notes": "",
+            "display_released_at": "2024年5月1日",
+            "released_at": "2024-05-01 00:00:00",
+            "image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/61b192065618a075fbd6389703f46d2176ae1712.jpg",
+            "thumbnail_image_url": "https://img.ultraman-cardgame.com/images/card_bundle_details/thumbnails/11b3e283732d89ed80b057ca761b3bf4803987fe.png"
+          }
+        }
+      ]
+    }
+  }
