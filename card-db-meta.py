@@ -1,11 +1,10 @@
-# ultraman_api_metadata_to_csv.py
+# card-db-meta.py
 
 import requests
 import csv
 
 API_URL = "https://api.ultraman-cardgame.com/api/v1/us/cards"
 
-# Define output files for each metadata type
 OUTPUT_FILES = {
     'types': 'ultraman_types.csv',
     'features': 'ultraman_features.csv',
@@ -23,7 +22,6 @@ def fetch_api_metadata():
     return {field: meta.get(field, []) for field in META_FIELDS}
 
 def save_simple_meta_to_csv(data, filename, field):
-    # For types, features, rarities, grades
     rows = []
     for entry in data:
         row = {k: v for k, v in entry.items() if isinstance(v, (str, int, float))}

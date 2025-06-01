@@ -1,4 +1,4 @@
-# ultraman_cards_api_to_csv.py
+# card-db-api.py
 
 import csv
 import time
@@ -9,7 +9,6 @@ API_BASE_URL = "https://api.ultraman-cardgame.com/api/v1/us/cards"
 OUTPUT_CSV = "ultraman_cards.csv"
 SLEEP_BETWEEN_REQUESTS = 0.3  # To avoid hammering the API
 
-# These are the primary card fields to export. Adjust as needed.
 FIELDNAMES = [
     'id', 'name', 'type_name', 'character_name', 'rarity', 'type', 'feature', 'level',
     'battle_power_1', 'battle_power_2', 'battle_power_3', 'battle_power_ex',
@@ -18,7 +17,6 @@ FIELDNAMES = [
 ]
 
 def extract_card_data(card):
-    # Defensive parsing: The data is nested and some fields may be missing
     detail = card.get('detail', {})
     return {
         'id': card.get('id'),
@@ -58,7 +56,6 @@ def get_all_cards():
         data = resp.json()
         cards = data.get('data', [])
         all_cards.extend(cards)
-        # API provides a next link
         next_url = data.get('links', {}).get('next')
         page += 1
         time.sleep(SLEEP_BETWEEN_REQUESTS)
