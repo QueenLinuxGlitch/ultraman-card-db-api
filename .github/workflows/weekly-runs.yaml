@@ -1,0 +1,37 @@
+name: Weekly Database Scrape
+
+on:
+  schedule:
+    - cron: '0 5 * * 1'   # Runs at 05:00 UTC every Monday
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Card Scrape
+        run: python card-db-api.py
+
+      - name: Run Meta Scrape
+        run: python card-db-meta.py
+
+      - name: save changes
+        run: |
+          git config --global user.email "bot-parser@users.noreply.github.com"
+          git config --global user.name "Bot-Parser"
+          DATE=$(date -Iseconds)
+          git add .
+          git commit --all --message "Updated by Bot-Parser on $DATE" || echo "no changes to commit"
+          git push
