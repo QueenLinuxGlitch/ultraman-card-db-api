@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultraman Card Game Viewer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    .table-img {
+      width: 80px;
+      height: auto;
+      cursor: zoom-in;
+      transition: box-shadow 0.2s;
+      background: #eee;
+    }
+    .table-img:hover {
+      box-shadow: 0 0 6px #007bff;
+    }
+    .zoom-modal {
+      position: fixed;
+      z-index: 9999;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.85);
+      cursor: zoom-out;
+      transition: background 0.2s;
+    }
+    .zoom-modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      box-shadow: 0 0 16px #222;
+      border-radius: 8px;
+      background: #fff;
+    }
+    body {
+      background-color: #f8f9fa;
+    }
+    th {
+      cursor: pointer;
+    }
+    thead {
+      background-color: #23272b;
+      color: white;
+    }
+    td, th {
+      vertical-align: middle;
+      font-size: 0.92rem;
+    }
+    .container {
+      max-width: 98vw;
+    }
+    .filter-form {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #ddd;
+      padding: 1rem 1.5rem 0.5rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .filter-group > * {
+      flex: 1 1 200px;
+      min-width: 180px;
+    }
+    @media (max-width: 600px) {
+      .filter-group { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Logo HTML Block -->
+    <img src="logo_ucg.png" alt="ULTRAMAN CG Logo" style="height: 60px;">
+    <h1 class="mb-4">Ultraman Card Game Viewer</h1>
+    <p class="text-muted">Filter cards, share/bookmark filtered URLs, sort by column, zoom on image click.</p>
+    <form id="filterForm" class="filter-form" autocomplete="off">
+      <div class="filter-group" id="filterInputs"></div>
+      <button type="submit" class="btn btn-primary mb-2">Apply Filters</button>
+      <button type="button" class="btn btn-secondary mb-2 ms-2" onclick="resetFilters()">Reset</button>
+    </form>
+    <div class="table-responsive" id="table-container"></div>
+  </div>
+  <div id="zoomModal" class="zoom-modal" style="display:none;" onclick="hideZoom()">
+    <img id="zoomedImg" src="" alt="Zoomed Image" />
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script>
+    let originalData = [];
+    let currentData = [];
+    let currentSort = { column: null, asc: true };
+    let filterValues = {};
+    let columns = [];
+
+    function getURLFilters() {
+      const params = new URLSearchParams(window.location.search);
+      let filters = {};
+      for (const [key, value] of params.entries()) {
+        filters[key] = value;
+      }
+      return filters;
+    }
+
+    function updateURLFilters(filters) {
+      const params = new URLSearchParams();
+      Object.entries(filters).forEach(([k, v]) => {
+        if (v && v.trim() !== '') params.append(k, v.trim());
+      });
+      const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+      window.location.replace(newUrl);
+    }
+
+    // Ensure "image_url" always comes after "id" in the columns array
+    function reorderColumns(cols) {
+      const idIdx = cols.indexOf("id");
+      const imgIdx = cols.indexOf("image_url");
+      if (idIdx !== -1 && imgIdx !== -1 && imgIdx !== idIdx + 1) {
+        cols.splice(imgIdx, 1); // Remove "image_url"
+        cols.splice(idIdx + 1, 0, "image_url"); // Insert right after "id"
+      }
+      return cols;
+    }
+
+    function renderFilterForm(cols) {
+      const container = document.getElementById('filterInputs');
+      container.innerHTML = '';
+      const preferred = [
+        "name", "character_name", "rarity", "type", "type_name", "feature", "level", "number", "flavor_text", "effect"
+      ];
+      cols.forEach(col => {
+        if (
+          !col.toLowerCase().includes("image_url") &&
+          !col.toLowerCase().includes("thumbnail")
+        ) {
+          const display = preferred.includes(col) ? "" : " style='display:none;'";
+          container.innerHTML += `
+            <div${display}>
+              <label class="form-label mb-1" for="filter_${col}">${col.replace(/_/g, " ")}:</label>
+              <input type="text" id="filter_${col}" name="${col}" class="form-control" placeholder="Filter by ${col.replace(/_/g, " ")}" value="${filterValues[col] || ''}" />
+            </div>
+          `;
+        }
+      });
+    }
+
+    function lazyLoadImages() {
+      const imgs = document.querySelectorAll('img[data-src]');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.getAttribute('data-src');
+              img.removeAttribute('data-src');
+              obs.unobserve(img);
+            }
+          });
+        }, { rootMargin: '100px' });
+        imgs.forEach(img => observer.observe(img));
+      } else {
+        imgs.forEach(img => { img.src = img.getAttribute('data-src'); img.removeAttribute('data-src'); });
+      }
+    }
+
+    function applyFiltersAndRenderTable() {
+      currentData = originalData.filter(row => {
+        return Object.entries(filterValues).every(([col, filterVal]) => {
+          const rowVal = (row[col] || '').toLowerCase();
+          return rowVal.includes(filterVal.toLowerCase());
+        });
+      });
+      // Re-sort if sorted
+      if (currentSort.column) {
+        sortTable(currentSort.column, true);
+      } else {
+        renderTable(currentData);
+      }
+    }
+
+    function resetFilters() {
+      window.location.replace(window.location.pathname);
+    }
+
+    function renderTable(data) {
+      if (!data.length) {
+        document.getElementById('table-container').innerHTML = "<div class='alert alert-warning'>No results found.</div>";
+        setTimeout(lazyLoadImages, 0);
+        return;
+      }
+      const cols = columns.length ? columns : Object.keys(data[0]);
+      let html = '<table class="table table-striped table-bordered table-hover align-middle"><thead><tr>';
+      cols.forEach(col => {
+        html += `<th onclick="sortTable('${col}')">${col}</th>`;
+      });
+      html += '</tr></thead><tbody>';
+      data.forEach((row, rowIdx) => {
+        html += '<tr>';
+        cols.forEach(col => {
+          if (col === "image_url" && row[col]) {
+            html += `<td><img data-src="${row[col]}" class="table-img" loading="lazy" onclick="showZoom('${row[col]}')" alt="Card Image" /></td>`;
+          } else if (col.toLowerCase().includes('image_url') && row[col]) {
+            // For other image columns, just show as text (optional: can hide or handle as needed)
+            html += `<td>${row[col]}</td>`;
+          } else {
+            html += `<td>${row[col] || ''}</td>`;
+          }
+        });
+        html += '</tr>';
+      });
+      html += '</tbody></table>';
+      document.getElementById('table-container').innerHTML = html;
+      setTimeout(lazyLoadImages, 0);
+    }
+
+    // Enhanced sortTable to work correctly when called programmatically after filtering
+    function sortTable(col, noRender) {
+      if (currentSort.column === col && !noRender) {
+        currentSort.asc = !currentSort.asc;
+      } else if (!noRender) {
+        currentSort.column = col;
+        currentSort.asc = true;
+      }
+      const sortAsc = currentSort.asc ? 1 : -1;
+      currentData.sort((a, b) => {
+        const valA = (a[col] || '').toLowerCase();
+        const valB = (b[col] || '').toLowerCase();
+        if (!isNaN(a[col]) && !isNaN(b[col])) {
+          return (parseFloat(a[col]) - parseFloat(b[col])) * sortAsc;
+        }
+        if (valA < valB) return -1 * sortAsc;
+        if (valA > valB) return 1 * sortAsc;
+        return 0;
+      });
+      renderTable(currentData);
+    }
+    window.sortTable = sortTable;
+
+    window.showZoom = function(imgSrc) {
+      document.getElementById('zoomedImg').src = imgSrc;
+      document.getElementById('zoomModal').style.display = 'flex';
+    };
+    window.hideZoom = function() {
+      document.getElementById('zoomModal').style.display = 'none';
+      document.getElementById('zoomedImg').src = '';
+    };
+
+    // Main entry point
+    window.onload = function() {
+      filterValues = getURLFilters();
+      Papa.parse('ultraman_cards.csv', {
+        download: true,
+        header: true,
+        skipEmptyLines: true,
+        complete: function(results) {
+          originalData = results.data;
+          let detectedColumns = Object.keys(originalData[0] || {});
+          columns = reorderColumns(detectedColumns);
+          renderFilterForm(columns);
+          // Set filter fields in form to reflect filterValues from URL
+          for (const [col, val] of Object.entries(filterValues)) {
+            const input = document.getElementById('filter_' + col);
+            if (input) input.value = val;
+          }
+          applyFiltersAndRenderTable();
+        }
+      });
+
+      document.getElementById('filterForm').onsubmit = function(e) {
+        e.preventDefault();
+        // Get filter values (including hidden fields)
+        let formFilters = {};
+        const allInputs = this.querySelectorAll('input');
+        allInputs.forEach(input => {
+          if (input.value.trim() !== "") {
+            formFilters[input.name] = input.value.trim();
+          }
+        });
+        updateURLFilters(formFilters); // Page reloads with GET params; images reload after render.
+      };
+    };
+  </script>
+</body>
+</html>

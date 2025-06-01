@@ -1,8 +1,9 @@
 # ultraman_cards_api_to_csv.py
 
-import requests
 import csv
 import time
+import os
+import requests
 
 API_BASE_URL = "https://api.ultraman-cardgame.com/api/v1/us/cards"
 OUTPUT_CSV = "ultraman_cards.csv"
@@ -10,10 +11,10 @@ SLEEP_BETWEEN_REQUESTS = 0.3  # To avoid hammering the API
 
 # These are the primary card fields to export. Adjust as needed.
 FIELDNAMES = [
-    'id', 'name', 'character_name', 'rarity', 'type', 'feature', 'level',
+    'id', 'name', 'type_name', 'character_name', 'rarity', 'type', 'feature', 'level',
     'battle_power_1', 'battle_power_2', 'battle_power_3', 'battle_power_ex',
     'effect', 'flavor_text', 'section', 'bundle_version', 'serial', 'branch',
-    'number', 'publication_year', 'illustrator_name', 'image_url', 'thumbnail_image_url'
+    'number', 'participating_works', 'publication_year', 'illustrator_name', 'image_url', 'thumbnail_image_url'
 ]
 
 def extract_card_data(card):
@@ -22,6 +23,7 @@ def extract_card_data(card):
     return {
         'id': card.get('id'),
         'name': detail.get('name'),
+        'type_name': detail.get('type_name'),
         'character_name': detail.get('character_name'),
         'rarity': card.get('rarity', {}).get('description'),
         'type': card.get('type', {}).get('description') if card.get('type') else None,
@@ -38,6 +40,7 @@ def extract_card_data(card):
         'serial': card.get('serial'),
         'branch': card.get('branch'),
         'number': card.get('number'),
+        'participating_works': detail.get('participating_works'),
         'publication_year': card.get('publication_year'),
         'illustrator_name': detail.get('illustrator_name'),
         'image_url': detail.get('image_url'),
@@ -70,6 +73,18 @@ def save_cards_to_csv(cards, filename):
             writer.writerow(row)
     print(f"Saved {len(cards)} cards to {filename}")
 
+def copy_file_to_directory(src, dst_dir):
+    if not os.path.isdir(dst_dir):
+        raise FileNotFoundError(f"Destination directory not found: {dst_dir}")
+
+    dst = os.path.join(dst_dir, os.path.basename(src))
+
+    with open(src, 'rb') as fsrc:
+        with open(dst, 'wb') as fdst:
+            fdst.write(fsrc.read())
+    return dst
+
 if __name__ == "__main__":
     cards = get_all_cards()
     save_cards_to_csv(cards, OUTPUT_CSV)
+    copy_file_to_directory('ultraman_cards.csv','docs/')
