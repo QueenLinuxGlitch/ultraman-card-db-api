@@ -91,6 +91,32 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script>
+    // --- Column display names mapping ---
+    const COLUMN_DISPLAY_NAMES = {
+      id: "Card ID",
+      thumbnail_image_url: "Card Image",
+      number: "Card Number",
+      name: "Card Name",
+      character_name: "Character",
+      rarity: "Rarity",
+      type: "Type",
+      type_name: "Type Name",
+      feature: "Feature",
+      level: "Level",
+      flavor_text: "Flavor Text",
+      effect: "Effect",
+      section: "Section",
+      bundle_version: "Bundle Version",
+      serial: "Serial",
+      branch: "Branch",
+      publication_year: "Year",
+      illustrator_name: "Illustrator",
+      image_url: "Full Image",
+    };
+    function getDisplayName(col) {
+      return COLUMN_DISPLAY_NAMES[col] || col.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    }
+
     let originalData = [];
     let currentData = [];
     let currentSort = { column: null, asc: true };
@@ -144,8 +170,8 @@
           const display = preferred.includes(col) ? "" : " style='display:none;'";
           container.innerHTML += `
             <div${display}>
-              <label class="form-label mb-1" for="filter_${col}">${col.replace(/_/g, " ")}:</label>
-              <input type="text" id="filter_${col}" name="${col}" class="form-control" placeholder="Filter by ${col.replace(/_/g, " ")}" value="${filterValues[col] || ''}" />
+              <label class="form-label mb-1" for="filter_${col}">${getDisplayName(col)}:</label>
+              <input type="text" id="filter_${col}" name="${col}" class="form-control" placeholder="Filter by ${getDisplayName(col)}" value="${filterValues[col] || ''}" />
             </div>
           `;
         }
@@ -174,14 +200,13 @@
     function applyFiltersAndRenderTable() {
       currentData = originalData.filter(row => {
         return Object.entries(filterValues).every(([col, filterVal]) => {
-          const rowVal = (row[col] || '').toLowerCase();
-          // return rowVal.includes(filterVal.toLowerCase());
+          const rowVal = (row[col] || '');
           const filterValLower = filterVal.toLowerCase();
           if (col === "id") {
-            // Exact match for id (case-sensitive)
-            return row[col] === filterVal;
+            // Exact match, but case-insensitive
+            return rowVal.toLowerCase() === filterValLower;
           }
-          return rowVal.includes(filterValLower);
+          return rowVal.toLowerCase().includes(filterValLower);
         });
       });
       // Re-sort if sorted
@@ -198,9 +223,7 @@
 
     function randomCard() {
       if (!originalData.length) return;
-      // Get a random row
       const randomRow = originalData[Math.floor(Math.random() * originalData.length)];
-      // Set GET filter to just that id (preserving other filters if you want, or use only id)
       updateURLFilters({ id: randomRow.id });
     }
 
@@ -213,7 +236,7 @@
       const cols = columns.length ? columns : Object.keys(data[0]);
       let html = '<table class="table table-striped table-bordered table-hover align-middle"><thead><tr>';
       cols.forEach(col => {
-        html += `<th onclick="sortTable('${col}')">${col}</th>`;
+        html += `<th onclick="sortTable('${col}')">${getDisplayName(col)}</th>`;
       });
       html += '</tr></thead><tbody>';
       data.forEach((row, rowIdx) => {
@@ -222,22 +245,18 @@
           if (col === "thumbnail_image_url" && row[col]) {
             html += `<td><img data-src="${row[col]}" class="table-img" loading="lazy" onclick="showZoom('${row[col]}')" alt="Card Image" /></td>`;
           } else if (col === "character_name" && row[col]) {
-            // Show character name icon
             const nameVal = row[col].trim().toLowerCase();
             const imgSrc = `character_names/${nameVal}.png`;
             html += `<td><img src="${imgSrc}" alt="${nameVal}" title="${nameVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col === "rarity" && row[col]) {
-            // Show rarity icon
             const rarityVal = row[col].trim();
             const imgSrc = `rarities/image_rarity_${rarityVal}.png`;
             html += `<td><img src="${imgSrc}" alt="${rarityVal}" title="${rarityVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col === "type" && row[col]) {
-            // Show type icon
             const typeVal = row[col].trim().toLowerCase();
             const imgSrc = `types/${typeVal}.png`;
             html += `<td><img src="${imgSrc}" alt="${typeVal}" title="${typeVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col.toLowerCase().includes('thumbnail_image_url') && row[col]) {
-            // For other image columns, just show as text (optional: can hide or handle as needed)
             html += `<td>${row[col]}</td>`;
           } else {
             html += `<td>${row[col] || ''}</td>`;
@@ -250,7 +269,6 @@
       setTimeout(lazyLoadImages, 0);
     }
 
-    // Enhanced sortTable to work correctly when called programmatically after filtering
     function sortTable(col, noRender) {
       if (currentSort.column === col && !noRender) {
         currentSort.asc = !currentSort.asc;
@@ -282,7 +300,6 @@
       document.getElementById('zoomedImg').src = '';
     };
 
-    // Main entry point
     window.onload = function() {
       filterValues = getURLFilters();
       Papa.parse('ultraman_cards.csv', {
@@ -294,7 +311,6 @@
           let detectedColumns = Object.keys(originalData[0] || {});
           columns = reorderColumns(detectedColumns);
           renderFilterForm(columns);
-          // Set filter fields in form to reflect filterValues from URL
           for (const [col, val] of Object.entries(filterValues)) {
             const input = document.getElementById('filter_' + col);
             if (input) input.value = val;
@@ -305,7 +321,6 @@
 
       document.getElementById('filterForm').onsubmit = function(e) {
         e.preventDefault();
-        // Get filter values (including hidden fields)
         let formFilters = {};
         const allInputs = this.querySelectorAll('input');
         allInputs.forEach(input => {
@@ -313,7 +328,7 @@
             formFilters[input.name] = input.value.trim();
           }
         });
-        updateURLFilters(formFilters); // Page reloads with GET params; images reload after render.
+        updateURLFilters(formFilters);
       };
     };
   </script>
