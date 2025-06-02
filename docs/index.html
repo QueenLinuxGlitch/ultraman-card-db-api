@@ -124,7 +124,7 @@
         cols.splice(idIdx + 1, 0, "thumbnail_image_url");
       }
       if (idIdx !== -1 && numberIdx !== -1 && numberIdx !== idIdx + 1) {
-        cols.splice(numberIdx, 1);
+        cols.splice(numberIdx + 1, 1);
         cols.splice(idIdx + 1, 0, "number");
       }
       return cols;
