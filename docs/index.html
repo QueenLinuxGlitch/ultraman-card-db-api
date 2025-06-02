@@ -37,7 +37,14 @@
       background: #fff;
     }
     body {
-      background-color: #f8f9fa;
+      /* background-color: #f8f9fa; */
+        background-attachment: fixed;
+        background-color: #000;
+        background-image: linear-gradient(180deg, transparent 0, transparent 80%, #000), url(bg_main.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        color: #fff;
     }
     th {
       cursor: pointer;
@@ -79,7 +86,7 @@
   <div class="container py-3">
     <img src="logo_ucg.png" alt="ULTRAMAN CG Logo" style="height: 60px;">
     <h1 class="mb-4">Ultraman Card Game Viewer</h1>
-    <p class="text-muted">Filter cards, share/bookmark filtered URLs, sort by column, zoom on image click.</p>
+    <p style="color:white;">Filter cards, pick a random, share/bookmark filtered URLs, sort by column, zoom on image click.</p>
     <form id="filterForm" class="filter-form" autocomplete="off">
       <div class="filter-group" id="filterInputs"></div>
       <button type="submit" class="btn btn-primary mb-2">Apply Filters</button>
