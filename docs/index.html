@@ -205,7 +205,7 @@
             html += `<td><img data-src="${row[col]}" class="table-img" loading="lazy" onclick="showZoom('${row[col]}')" alt="Card Image" /></td>`;
           } else if (col === "character_name" && row[col]) {
             // Show character name icon
-            const nameVal = row[col].trim();
+            const nameVal = row[col].trim().toLowerCase();
             const imgSrc = `character_names/${nameVal}.png`;
             html += `<td><img src="${imgSrc}" alt="${nameVal}" title="${nameVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col === "rarity" && row[col]) {
@@ -215,7 +215,7 @@
             html += `<td><img src="${imgSrc}" alt="${rarityVal}" title="${rarityVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col === "type" && row[col]) {
             // Show type icon
-            const typeVal = row[col].trim();
+            const typeVal = row[col].trim().toLowerCase();
             const imgSrc = `types/${typeVal}.png`;
             html += `<td><img src="${imgSrc}" alt="${typeVal}" title="${typeVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col.toLowerCase().includes('image_url') && row[col]) {
