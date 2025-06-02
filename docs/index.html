@@ -203,6 +203,11 @@
         cols.forEach(col => {
           if (col === "image_url" && row[col]) {
             html += `<td><img data-src="${row[col]}" class="table-img" loading="lazy" onclick="showZoom('${row[col]}')" alt="Card Image" /></td>`;
+          } else if (col === "rarity" && row[col]) {
+            // Show rarity icon
+            const rarityVal = row[col].trim();
+            const imgSrc = `rarities/image_rarity_${rarityVal}.png`;
+            html += `<td><img src="${imgSrc}" alt="${rarityVal}" title="${rarityVal}" style="height:32px;vertical-align:middle;" /></td>`;
           } else if (col.toLowerCase().includes('image_url') && row[col]) {
             // For other image columns, just show as text (optional: can hide or handle as needed)
             html += `<td>${row[col]}</td>`;
