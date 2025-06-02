@@ -82,6 +82,7 @@
       <div class="filter-group" id="filterInputs"></div>
       <button type="submit" class="btn btn-primary mb-2">Apply Filters</button>
       <button type="button" class="btn btn-secondary mb-2 ms-2" onclick="resetFilters()">Reset</button>
+      <button type="button" class="btn btn-info mb-2 ms-2" onclick="randomCard()">Random Card</button>
     </form>
     <div class="table-responsive" id="table-container"></div>
   </div>
@@ -174,7 +175,13 @@
       currentData = originalData.filter(row => {
         return Object.entries(filterValues).every(([col, filterVal]) => {
           const rowVal = (row[col] || '').toLowerCase();
-          return rowVal.includes(filterVal.toLowerCase());
+          // return rowVal.includes(filterVal.toLowerCase());
+          const filterValLower = filterVal.toLowerCase();
+          if (col === "id") {
+            // Exact match for id (case-sensitive)
+            return row[col] === filterVal;
+          }
+          return rowVal.includes(filterValLower);
         });
       });
       // Re-sort if sorted
@@ -187,6 +194,14 @@
 
     function resetFilters() {
       window.location.replace(window.location.pathname);
+    }
+
+    function randomCard() {
+      if (!originalData.length) return;
+      // Get a random row
+      const randomRow = originalData[Math.floor(Math.random() * originalData.length)];
+      // Set GET filter to just that id (preserving other filters if you want, or use only id)
+      updateURLFilters({ id: randomRow.id });
     }
 
     function renderTable(data) {
