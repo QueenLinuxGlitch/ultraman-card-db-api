@@ -75,7 +75,6 @@
 </head>
 <body>
   <div class="container py-3">
-    <!-- Logo HTML Block -->
     <img src="logo_ucg.png" alt="ULTRAMAN CG Logo" style="height: 60px;">
     <h1 class="mb-4">Ultraman Card Game Viewer</h1>
     <p class="text-muted">Filter cards, share/bookmark filtered URLs, sort by column, zoom on image click.</p>
@@ -115,18 +114,17 @@
       window.location.replace(newUrl);
     }
 
-    // Ensure "image_url" always comes after "id" in the columns array
     function reorderColumns(cols) {
       const idIdx = cols.indexOf("id");
-      const imgIdx = cols.indexOf("image_url");
+      const imgIdx = cols.indexOf("thumbnail_image_url");
       const numberIdx = cols.indexOf("number");
       if (idIdx !== -1 && imgIdx !== -1 && imgIdx !== idIdx + 1) {
-        cols.splice(imgIdx, 1); // Remove "image_url"
-        cols.splice(idIdx + 1, 0, "image_url"); // Insert right after "number"
+        cols.splice(imgIdx, 1);
+        cols.splice(idIdx + 1, 0, "thumbnail_image_url");
       }
       if (idIdx !== -1 && numberIdx !== -1 && numberIdx !== idIdx + 1) {
-        cols.splice(numberIdx, 1); // Remove "number"
-        cols.splice(idIdx + 1, 0, "number"); // Insert right after "id"
+        cols.splice(numberIdx, 1);
+        cols.splice(idIdx + 1, 0, "number");
       }
       return cols;
     }
@@ -206,7 +204,7 @@
       data.forEach((row, rowIdx) => {
         html += '<tr>';
         cols.forEach(col => {
-          if (col === "image_url" && row[col]) {
+          if (col === "thumbnail_image_url" && row[col]) {
             html += `<td><img data-src="${row[col]}" class="table-img" loading="lazy" onclick="showZoom('${row[col]}')" alt="Card Image" /></td>`;
           } else if (col === "character_name" && row[col]) {
             // Show character name icon
@@ -223,7 +221,7 @@
             const typeVal = row[col].trim().toLowerCase();
             const imgSrc = `types/${typeVal}.png`;
             html += `<td><img src="${imgSrc}" alt="${typeVal}" title="${typeVal}" style="height:32px;vertical-align:middle;" /></td>`;
-          } else if (col.toLowerCase().includes('image_url') && row[col]) {
+          } else if (col.toLowerCase().includes('thumbnail_image_url') && row[col]) {
             // For other image columns, just show as text (optional: can hide or handle as needed)
             html += `<td>${row[col]}</td>`;
           } else {
