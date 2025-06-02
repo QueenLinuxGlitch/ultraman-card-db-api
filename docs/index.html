@@ -122,7 +122,7 @@
       const numberIdx = cols.indexOf("number");
       if (idIdx !== -1 && imgIdx !== -1 && imgIdx !== idIdx + 1) {
         cols.splice(imgIdx, 1); // Remove "image_url"
-        cols.splice(idIdx + 2, 0, "image_url"); // Insert right after "number"
+        cols.splice(idIdx + 1, 0, "image_url"); // Insert right after "number"
       }
       if (idIdx !== -1 && numberIdx !== -1 && numberIdx !== idIdx + 1) {
         cols.splice(numberIdx, 1); // Remove "number"
