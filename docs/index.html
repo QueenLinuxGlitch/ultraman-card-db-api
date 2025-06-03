@@ -40,11 +40,11 @@
       /* background-color: #f8f9fa; */
         background-attachment: fixed;
         background-color: #000;
-        background-image: linear-gradient(180deg, transparent 0, transparent 80%, #000), url(bg_main.jpg);
+        background-image: linear-gradient(180deg, transparent 0, transparent 100%, #000), url(bg_main.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: 100% auto;
-        color: #fff;
+        /* color: #fff; */
     }
     th {
       cursor: pointer;
@@ -85,7 +85,7 @@
 <body>
   <div class="container py-3">
     <img src="logo_ucg.png" alt="ULTRAMAN CG Logo" style="height: 60px;">
-    <h1 class="mb-4">Ultraman Card Game Viewer</h1>
+    <h1 class="mb-4" style="color: whitesmoke;">Ultraman Card Game DB Viewer</h1>
     <p style="color:white;">Filter cards, pick a random, share/bookmark filtered URLs, sort by column, zoom on image click.</p>
     <form id="filterForm" class="filter-form" autocomplete="off">
       <div class="filter-group" id="filterInputs"></div>
@@ -187,23 +187,42 @@
       });
     }
 
-    function lazyLoadImages() {
-      const imgs = document.querySelectorAll('img[data-src]');
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, obs) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              img.src = img.getAttribute('data-src');
-              img.removeAttribute('data-src');
-              obs.unobserve(img);
-            }
-          });
-        }, { rootMargin: '100px' });
-        imgs.forEach(img => observer.observe(img));
-      } else {
-        imgs.forEach(img => { img.src = img.getAttribute('data-src'); img.removeAttribute('data-src'); });
-      }
+      function lazyLoadImages() {
+        const imgs = Array.from(document.querySelectorAll('img[data-src]'));
+        if ('IntersectionObserver' in window) {
+            let loading = false;
+
+            const loadImageWithDelay = async (img) => {
+                if (!img) return;
+                loading = true;
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Wait 1 second
+                img.src = img.getAttribute('data-src');
+                img.removeAttribute('data-src');
+                loading = false;
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                // Filter intersecting entries and load one at a time
+                const intersectingImgs = entries.filter(entry => entry.isIntersecting).map(entry => entry.target);
+
+                if (!loading && intersectingImgs.length > 0) {
+                    loadImageWithDelay(intersectingImgs[0]).then(() => {
+                        obs.unobserve(intersectingImgs[0]);
+                    });
+                }
+            }, { rootMargin: '100px' });
+
+            imgs.forEach(img => observer.observe(img));
+        } else {
+            // Fallback: load all immediately, one by one with delay
+            (async function sequentialLoad() {
+                for (const img of imgs) {
+                    await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second delay
+                    img.src = img.getAttribute('data-src');
+                    img.removeAttribute('data-src');
+                }
+            })();
+        }
     }
 
     function applyFiltersAndRenderTable() {
