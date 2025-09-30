@@ -16,6 +16,12 @@ FIELDNAMES = [
     'number', 'participating_works', 'publication_year', 'illustrator_name', 'image_url', 'thumbnail_image_url'
 ]
 
+def sanitize_text(value):
+    if value is None:
+        return ""
+    # Replace newlines and carriage returns with spaces
+    return str(value).replace("\r", " ").replace("\n", " ").strip()
+
 def extract_card_data(card):
     detail = card.get('detail', {})
     return {
@@ -31,8 +37,8 @@ def extract_card_data(card):
         'battle_power_2': card.get('battle_power_2'),
         'battle_power_3': card.get('battle_power_3'),
         'battle_power_ex': card.get('battle_power_ex'),
-        'effect': detail.get('effect'),
-        'flavor_text': detail.get('flavor_text'),
+        'effect': sanitize_text(detail.get('effect')),
+        'flavor_text': sanitize_text(detail.get('flavor_text')),
         'section': card.get('section'),
         'bundle_version': card.get('bundle_version'),
         'serial': card.get('serial'),
