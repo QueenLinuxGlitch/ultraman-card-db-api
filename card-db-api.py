@@ -9,11 +9,19 @@ API_BASE_URL = "https://api.ultraman-cardgame.com/api/v1/us/cards"
 OUTPUT_CSV = "ultraman_cards.csv"
 SLEEP_BETWEEN_REQUESTS = 0.3  # To avoid hammering the API
 
+# FIELDNAMES = [
+#     'id', 'name', 'type_name', 'character_name', 'rarity', 'type', 'feature', 'level',
+#     'battle_power_1', 'battle_power_2', 'battle_power_3', 'battle_power_ex',
+#     'effect', 'flavor_text', 'section', 'bundle_version', 'serial', 'branch',
+#     'number', 'participating_works', 'publication_year', 'illustrator_name', 'image_url', 'thumbnail_image_url'
+# ]
+
 FIELDNAMES = [
-    'id', 'name', 'type_name', 'character_name', 'rarity', 'type', 'feature', 'level',
-    'battle_power_1', 'battle_power_2', 'battle_power_3', 'battle_power_ex',
-    'effect', 'flavor_text', 'section', 'bundle_version', 'serial', 'branch',
-    'number', 'participating_works', 'publication_year', 'illustrator_name', 'image_url', 'thumbnail_image_url'
+    'id', 'section', 'bundle_version', 'serial', 'branch', 'number', 'rarity', 'round',
+    'level', 'type', 'feature', 'battle_power_1', 'battle_power_2', 'battle_power_3', 'battle_power_4',
+    'battle_power_ex', 'publication_year', 'name', 'ruby', 'character_name', 'effect', 'flavor_text',
+    'participating_works', 'participating_works_url', 'errata_enable', 'errata_url', 'type_name',
+    'illustrator_name', 'image_url', 'thumbnail_image_url'
 ]
 
 def sanitize_text(value):
@@ -26,29 +34,35 @@ def extract_card_data(card):
     detail = card.get('detail', {})
     return {
         'id': card.get('id'),
-        'name': detail.get('name'),
-        'type_name': detail.get('type_name'),
-        'character_name': detail.get('character_name'),
-        'rarity': card.get('rarity', {}).get('description'),
-        'type': card.get('type', {}).get('description') if card.get('type') else None,
-        'feature': card.get('feature', {}).get('description') if card.get('feature') else None,
-        'level': card.get('level'),
-        'battle_power_1': card.get('battle_power_1'),
-        'battle_power_2': card.get('battle_power_2'),
-        'battle_power_3': card.get('battle_power_3'),
-        'battle_power_ex': card.get('battle_power_ex'),
-        'effect': sanitize_text(detail.get('effect')),
-        'flavor_text': sanitize_text(detail.get('flavor_text')),
         'section': card.get('section'),
         'bundle_version': card.get('bundle_version'),
         'serial': card.get('serial'),
         'branch': card.get('branch'),
         'number': card.get('number'),
-        'participating_works': detail.get('participating_works'),
+        'rarity': card.get('rarity', {}).get('description'),
+        'round': card.get('round'),
+        'level': card.get('level'),
+        'type': card.get('type', {}).get('description') if card.get('type') else None,
+        'feature': card.get('feature', {}).get('description') if card.get('feature') else None,
+        'battle_power_1': card.get('battle_power_1'),
+        'battle_power_2': card.get('battle_power_2'),
+        'battle_power_3': card.get('battle_power_3'),
+        'battle_power_4': card.get('battle_power_4'),
+        'battle_power_ex': card.get('battle_power_ex'),
         'publication_year': card.get('publication_year'),
+        'name': detail.get('name'),
+        'ruby': detail.get('ruby'),
+        'character_name': detail.get('character_name'),
+        'effect': sanitize_text(detail.get('effect')),
+        'flavor_text': sanitize_text(detail.get('flavor_text')),
+        'participating_works': detail.get('participating_works'),
+        'participating_works_url': detail.get('participating_works_url'),
+        'errata_enable': detail.get('errata_enable'),
+        'errata_url': detail.get('errata_url'),
+        'type_name': detail.get('type_name'),
         'illustrator_name': detail.get('illustrator_name'),
         'image_url': detail.get('image_url'),
-        'thumbnail_image_url': detail.get('thumbnail_image_url')
+        'thumbnail_image_url': detail.get('thumbnail_image_url'),
     }
 
 def get_all_cards():
